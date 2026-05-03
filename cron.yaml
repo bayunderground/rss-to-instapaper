@@ -1,0 +1,5 @@
+cron:
+  - description: "Fetch RSS feeds and send new items to Instapaper"
+    url: /tasks/fetch
+    schedule: every 30 mins
+    timezone: Europe/Amsterdam

@@ -1,0 +1,8 @@
+runtime: python311
+
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  DATABASE_URL: "${DATABASE_URL}"
+  INSTAPAPER_USERNAME: "${INSTAPAPER_USERNAME}"
+  INSTAPAPER_PASSWORD: "${INSTAPAPER_PASSWORD}"
